@@ -7,11 +7,11 @@ header
 
 section role='main'
   p
-    ' I <strong>develop</strong> at the awesome <a class="boltmade" href="http://boltmade.com/" target="_blank" rel="external">Boltmade</a>. I play on <a class="github" href="http://github.com/elsom25" target="_blank" rel="external">GitHub</a> and <a class="bitbucket" href="http://bitbucket.org/elsom25" target="_blank" rel="external">Bitbucket</a>.
-    ' I <strong>lead</strong> as a Director of the <a class="feds" href="http://feds.ca/" target="_blank" rel="external">Federation of Students</a>.
-    ' I'm a Computer Science <strong>student</strong> at the <a class="uwaterloo" href="http://www.uwaterloo.ca/" target="_blank" rel="external">University of Waterloo</a>.
+    ' I <strong>develop</strong> at the awesome #{external_link_to 'Boltmade', '//boltmade.com/'}. I play on #{external_link_to 'GitHub', '//github.com/elsom25'} and #{external_link_to 'Bitbucket', '//bitbucket.org/elsom25'}.
+    ' I <strong>lead</strong> as a Director of the #{external_link_to 'Federation of Students', '//feds.ca/'}.
+    ' I'm a Computer Science <strong>student</strong> at the #{external_link_to 'Univeristy of Waterloo', '//uwaterloo.ca/'}.
 
-  p Say hello at <a href="mailto:jesse@jcmcginnis.com?sqs_title=Say+hello!">jesse@jcmcginnis.com</a>.<br /> Or <a class="twitter" href="http://twitter.com/elsom25" target="_blank" rel="external">follow me</a> on Twitter, <a class="facebook" href="http://fb.me/jcmcginnis" target="_blank" rel="external">creep me</a> on Facebook, or <a class="linkedin" href="http://www.linkedin.com/in/jcmcginnis" target="_blank" rel="external">check out</a> my LinkedIn.
+  p Say hello at #{mail_to 'jesse@jcmcginnis.com?sqs_title=Say+hello!', 'jesse@jcmcginnis.com'}.<br /> Or #{external_link_to 'follow me on Twitter', '//twitter.com/elsom25'}, #{external_link_to 'creep me on Facebook', '//fb.me/jcmcginnis'}, or #{external_link_to 'check out my LinkedIn', '//www.linkedin.com/in/jcmcginnis'}.
 
 .color
 

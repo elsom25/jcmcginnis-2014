@@ -7,6 +7,15 @@
 #   config.output_style = :compact
 # end
 
+helpers do
+  def external_link_to(body, url, html_options={})
+    html_options[:target] ||= '_blank'
+    html_options[:rel]    ||= 'external'
+    link_to body, url, html_options
+  end
+end
+
+
 ###
 # Settings
 ###
