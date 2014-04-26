@@ -1,26 +1,21 @@
-$base-accent: #DE3831;
+$base-accent: #de3831;
 $font-color: #444;
 
 body { color:$font-color; font-family:'Oxygen', sans-serif; margin-left:em(80); margin-right:em(40); max-width:em(625); }
 h1, h2, p { margin:0; }
-h1 { font-weight:700; font-family:'Raleway', sans-serif; color:black;
-  font-size: mr(0) - 0.75;
+h1 { font-weight:700; font-family:'Raleway', sans-serif; color:#000;
+  font-size: mr(0) - .75;
   @include media(em(575)) { font-size:mr(0); }
 }
 h2 { font-size:mr(1); font-weight:300; }
-p  { font-size:mr(3); line-height:1.6; margin-bottom:1em; padding:0.25em; }
+p { font-size:mr(3); line-height:1.6; margin-bottom:1em; padding:0.25em; }
 a {
   @include fancy-link($base-accent);
-  border-bottom:1px solid lighten($font-color, 50%); border-bottom:1px solid transparentize($font-color, 0.625);
+  border-bottom:1px solid lighten($font-color, 50%); border-bottom:1px solid transparentize($font-color, .625);
   color:$font-color; padding:0.05em 0.15em 0; text-decoration:none; }
 
 header { margin-top:10%; }
 .color { background:$base-accent; position:fixed; top:0; left:0; bottom:0; width:em(40); }
-section {
-  ul { list-style-type:none;
-    &, & li { margin:0; padding:0; display:inline; }
-  }
-}
 
 //
 // fun colour effect
