@@ -1,0 +1,1 @@
+(function(){!function(n){var t,e;return e=["red","yellow","teal","orange","purple","green","pink","blue"],t=e[Math.floor(Math.random()*e.length)],n(function(){return n("html").addClass(t),n("#favicon").attr("href","favicon_"+t+".ico")})}(this.Zepto)}).call(this);
