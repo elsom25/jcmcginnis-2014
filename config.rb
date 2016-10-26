@@ -1,11 +1,6 @@
 ###
-# Compass
+# Helpers
 ###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
 
 helpers do
   def external_link_to(body, url, html_options={})
@@ -15,10 +10,13 @@ helpers do
   end
 end
 
-
 ###
 # Settings
 ###
+
+set :css_dir,    'css'
+set :js_dir,     'js'
+set :images_dir, 'img'
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
@@ -28,10 +26,6 @@ configure :development do
   activate :livereload
 end
 
-set :css_dir, 'css'
-set :js_dir, 'js'
-set :images_dir, 'img'
-
 # Build-specific configuration
 configure :build do
   activate :minify_css
@@ -39,3 +33,12 @@ configure :build do
   activate :asset_hash
   activate :relative_assets
 end
+
+###
+# Compass
+###
+
+# Change Compass configuration
+# compass_config do |config|
+#   config.output_style = :compact
+# end
